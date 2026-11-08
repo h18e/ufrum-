@@ -51,7 +51,7 @@ Ohne ihn sieht Ufrumä z. B. den Papierkorb nicht, und macOS unterbricht den Sca
 | Meldung / Verhalten | Ursache / Lösung |
 |---|---|
 | Scan bleibt bei „Alte Downloads“ oder „App-Caches“ hängen | macOS wartet auf eine Erlaubnis-Abfrage (evtl. hinter dem Fenster). Erlauben klicken – oder Festplattenvollzugriff erteilen. |
-| „Festplattenvollzugriff fehlt“, obwohl eingeschaltet | Ufrumä neu starten. Wenn du aus Xcode gestartet hast: die App in `/Applications` verwenden. |
+| „Festplattenvollzugriff fehlt“, obwohl eingeschaltet | Ufrumä neu starten (⌘Q). Prüfen, dass in der Liste genau die App aus `/Applications` eingeschaltet ist – nach einem neuen Build die alte Kopie in Programme durch die neue ersetzen. Notfalls Ufrumä in der Liste mit **–** entfernen und mit **+** neu hinzufügen. |
 | Simulator wird nicht gelöscht: „Läuft gerade“ | Simulator-App beenden, neu scannen. |
 | Xcode-Caches nicht vorgewählt | Xcode läuft – beenden, neu scannen. |
 | Archives fehlen im Organizer | Liegen im Papierkorb – dort „Zurücklegen“. |

@@ -72,11 +72,25 @@ enum FS {
     }
 
     /// Prüft, ob Ufrumä Festplattenvollzugriff hat. Die TCC-Datenbank ist nur damit lesbar.
+    /// Ordner, die macOS ohne Festplattenvollzugriff hart sperrt (ohne Rückfrage).
+    /// Der früher übliche Test über `TCC.db` ist unzuverlässig: Die Datei existiert
+    /// nicht auf jedem Mac/jeder macOS-Version – dann meldete Ufrumä „fehlt“, obwohl erteilt.
+    static let fullDiskAccessProbes = [
+        "Library/Safari",
+        "Library/Mail",
+        "Library/Messages",
+        "Library/Cookies",
+        "Library/Containers/com.apple.Safari",
+        ".Trash",
+        "Library/Application Support/com.apple.TCC",
+    ]
+
     static func hasFullDiskAccess() -> Bool {
-        let probe = fm.homeDirectoryForCurrentUser.appending(path: "Library/Application Support/com.apple.TCC/TCC.db")
-        if let h = FileHandle(forReadingAtPath: probe.path) {
-            try? h.close()
-            return true
+        let home = fm.homeDirectoryForCurrentUser
+        for rel in fullDiskAccessProbes {
+            let url = home.appending(path: rel)
+            // Existiert der Ordner nicht, sagt er nichts aus → nächster.
+            if (try? fm.contentsOfDirectory(atPath: url.path)) != nil { return true }
         }
         return false
     }

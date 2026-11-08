@@ -42,6 +42,7 @@ Ufrumae/
   Scanners/    XcodeScanners, GeneralScanners, AnalysisScanners – je ein Scanner pro Bereich
   Views/       Oberfläche
 UfrumaeTests/  Regeln + Sicherheitsprüfung (RuleTests), Live-Scan nur auf Wunsch (LiveScanTests)
+Design/       App-Icon (Original + 1024er-Vorlage mit macOS-Form)
 Config/        Signierung (Team-ID lokal, nicht im Git), Entitlements
 ```
 
