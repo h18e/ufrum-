@@ -40,6 +40,16 @@ struct MainView: View {
             }
         }
         .toolbar {
+            ToolbarItem(placement: .navigation) {
+                Button {
+                    sidebar = .overview
+                } label: {
+                    Label("Übersicht", systemImage: "chevron.backward")
+                }
+                .keyboardShortcut("[", modifiers: .command)
+                .disabled(sidebar == .overview || sidebar == nil)
+                .help("Zurück zur Übersicht (⌘[)")
+            }
             ToolbarItemGroup {
                 if model.isScanning {
                     ProgressView().controlSize(.small)

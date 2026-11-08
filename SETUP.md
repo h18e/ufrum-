@@ -39,6 +39,7 @@ Ohne ihn sieht Ufrumä z. B. den Papierkorb nicht, und macOS unterbricht den Sca
 2. **Probelauf ist an** – klicke auf **Probelauf starten**: Ufrumä zeigt, was frei würde, löscht aber nichts.
 3. Bereiche in der Seitenleiste durchgehen, Häkchen prüfen. Rechtsklick auf einen Eintrag:
    **Im Finder zeigen**, **Ordner/Datei schützen**, **Immer ignorieren**.
+   Zurück zur Gesamtansicht: oben links **‹ Übersicht** oder **⌘[** (oder ganz oben in der Seitenleiste auf **Übersicht**).
 4. Wenn alles passt: im blauen Banner **Probelauf beenden** → **Aufräumen**.
 
 ## 5. Menüleiste und Autostart
