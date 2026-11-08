@@ -1,0 +1,4 @@
+// Kopiere diese Datei nach Config/Signing.local.xcconfig und trage deine Team-ID ein.
+// Die Team-ID findest du in Xcode unter Settings… (Cmd+,) -> Accounts -> dein Account -> Team.
+
+UFRUMAE_DEVELOPMENT_TEAM = ABCDE12345

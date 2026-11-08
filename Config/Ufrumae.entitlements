@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+		Bewusst leer: Ufrumä läuft OHNE App-Sandbox.
+		Eine Sandbox-App dürfte ~/Library/Developer, fremde Caches oder den
+		Papierkorb gar nicht anfassen. Die App ist nur für den eigenen Mac gedacht.
+	-->
+</dict>
+</plist>

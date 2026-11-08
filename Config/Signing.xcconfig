@@ -1,0 +1,13 @@
+// Ufrumä – Signierung
+//
+// Diese Datei ist im Git und bleibt leer. Deine persoenliche Team-ID gehoert in
+// Config/Signing.local.xcconfig – die Datei ist in .gitignore eingetragen und wird
+// deshalb nie von einem "git pull" ueberschrieben.
+//
+// Wichtig bei Ufrumä: Der Festplattenvollzugriff ist an die Signatur gebunden.
+// Mit einer stabilen Team-Signatur musst du ihn nur EINMAL erteilen.
+//
+// Einrichtung (einmalig):
+//   cp Config/Signing.local.xcconfig.example Config/Signing.local.xcconfig
+//   danach die Team-ID eintragen. Details in SETUP.md.
+#include? "Signing.local.xcconfig"

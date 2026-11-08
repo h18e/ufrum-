@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Xcode – Benutzer- und Build-Daten
+xcuserdata/
+*.xcuserstate
+build/
+DerivedData/
+*.dSYM
+
+# Persoenliche Signierungs-Einstellungen (siehe Config/Signing.local.xcconfig.example)
+Config/Signing.local.xcconfig
+
+# String Catalog wird beim Bauen aus dem Code gefuellt (einsprachig, Deutsch)
+Ufrumae/Resources/Localizable.xcstrings
+
+# Swift Package Manager
+.swiftpm/
+.build/
+build.log
